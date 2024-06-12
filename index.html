@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripMate</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-pink-100">
+    <header class="p-4 text-white">
+        <h1 class="text-2xl">TripMate</h1>
+    </header>
+    <main class="p-4">
+        <input type="text" id="search-input" placeholder="Search for a destination" class="p-2 border rounded border-pink-500">
+        <button id="search-button" class="bg-pink-500 text-white p-2 rounded">Search</button>
+        <div id="results-section" class="mt-4"></div>
+    </main>
+    <footer class="p-4 text-white text-center">
+        TripMate © 2024
+    </footer>
+    <div id="modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden">
+        <div class="modal-content mx-auto mt-20 max-w-sm">
+            <h2 id="modal-title" class="text-xl mb-4"></h2>
+            <p id="modal-content"></p>
+            <button id="close-modal" class="mt-4 p-2 rounded">Close</button>
+        </div>
+    </div>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
